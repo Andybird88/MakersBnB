@@ -2,6 +2,13 @@
 
 ## Team: Dylan, Ginny, Andy and Luke
 
+### MVP
+
+```
+Program allows functionality of being able to post a place available and to book a place available (whether or not you are a user, logged in, etc.)
+```
+
+
 # MakersBnB specification
 
 We would like a web application that allows users to list spaces they have available, and to hire spaces for the night.
@@ -15,6 +22,48 @@ We would like a web application that allows users to list spaces they have avail
 - Any signed-up user can request to hire any space for one night, and this should be approved by the user that owns that space.
 - Nights for which a space has already been booked should not be available for users to book that space.
 - Until a user has confirmed a booking request, that space can still be booked for that night.
+
+### User Stories (translated from Headline Specifications)
+
+```
+As a User
+So I can promote my space
+I want to be able to sign in and list a new space
+```
+```
+As a User
+So I can promote more than one space
+I want to be able to list multiple spaces
+```
+```
+As a User
+So that information is available to enhance booking probability
+I want to be able to name my space, provide a description and price-per-night
+```
+```
+As a User
+So I can fully utilise my space
+I want to make my space available for a range of dates
+```
+```
+As a User
+So that I can secure a booking, on a specific day
+I want to be be able to book a space for one night
+```
+```
+As a User/Owner
+So that I decide who stays in my space
+I want to be able to approve a booking before it's confirmed
+```
+```
+So I can avoid double bookings
+I want my space to be unavailable for nights that it is already booked
+```
+```
+As a User/Owner
+So I can ensure best usage of the space
+I would only like my space to be unavailable after I have confirmed a booking
+```
 
 ### Nice-to-haves
 
