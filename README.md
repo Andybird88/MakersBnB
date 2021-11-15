@@ -91,6 +91,27 @@ I would only like my space to be unavailable after I have confirmed a booking
 - A ‘chat’ functionality once a space has been booked, allowing users whose space-booking request has been confirmed to chat with the user that owns that space
 - Basic payment implementation though Stripe.
 
+### Set up the live database
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE MakersBNB;
+3. Connect to the database using the pqsl command \c MakersBNB;
+4. Run the query we have saved in the file 02_create_spaces_table.sql
+5. Run the query we have save in the db/migrations directory - files 01-04 to setup users_table, spaces_table, availabilities_table, and bookings_table
+### Set up the test database
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE MakersBNB_test;
+3. Connect to the database using the pqsl command \c MakersBNB_test;
+4. Run the query we have saved in the file 02_create_spaces_table.sql
+5. Run the query we have save in the db/migrations directory - files 01-04 to setup users_table, spaces_table, availabilities_table, and bookings_table
+
+# Relational Drawing
+![](../../../Downloads/relational drawing.jpg)
+
+# Printed Database Relational Diagram
+![](../../../Desktop/Screenshot 2021-11-15 at 20.21.41.png)
+
 ### Mockups
 
 Mockups for MakersBnB are available [here](https://github.com/makersacademy/course/blob/main/makersbnb/makers_bnb_images/MakersBnB_mockups.pdf).
