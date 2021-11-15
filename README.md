@@ -65,6 +65,10 @@ So I can ensure best usage of the space
 I would only like my space to be unavailable after I have confirmed a booking
 ```
 
+# Domain Model Diagram
+
+<img width="1371" alt="Screenshot 2021-11-15 at 16 49 37" src="https://user-images.githubusercontent.com/90717175/141821476-21101dbe-5544-4028-ab66-d50edafa72de.png">
+
 ### Nice-to-haves
 
 - Users should receive an email whenever one of the following happens:
