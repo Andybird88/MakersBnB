@@ -65,6 +65,10 @@ So I can ensure best usage of the space
 I would only like my space to be unavailable after I have confirmed a booking
 ```
 
+# CRC Card
+
+<img width="1094" alt="Screenshot 2021-11-15 at 16 51 50" src="https://user-images.githubusercontent.com/90717175/141821698-5831c10b-16ee-428d-80e2-ae481fff34b9.png">
+
 # Domain Model Diagram
 
 <img width="1371" alt="Screenshot 2021-11-15 at 16 49 37" src="https://user-images.githubusercontent.com/90717175/141821476-21101dbe-5544-4028-ab66-d50edafa72de.png">
