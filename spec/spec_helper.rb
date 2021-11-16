@@ -1,7 +1,7 @@
 require 'rspec'
 require 'capybara'
 require 'sinatra'
-# require 'sinatra-reloader' if development?
+require 'sinatra/reloader' if development?
 require 'capybara/rspec'
 require 'pg'
 require 'simplecov'
@@ -12,7 +12,7 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 ENV['ENVIRONMENT'] = 'test'
 
-# Capybara.app = Makersbnb
+Capybara.app = Makersbnb
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
