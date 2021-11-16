@@ -13,6 +13,10 @@ class Makersbnb < Sinatra::Base
     erb :booking_form
   end
 
+  get '/createspace' do
+    erb :create_space
+  end
+
 
   run! if app_file == $PROGRAM_NAME
 
