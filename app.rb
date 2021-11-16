@@ -13,8 +13,20 @@ class Makersbnb < Sinatra::Base
     erb :booking_form
   end
 
+  post '/booking_request' do
+    erb :confirmation
+    #redirect '/confirmation_page'
+    
+  end
+
   get '/createspace' do
     erb :create_space
+  end
+
+  post '/createaspace' do
+    # erb :create_space
+    #redirect '/viewspaces'
+    redirect '/book'
   end
 
 
