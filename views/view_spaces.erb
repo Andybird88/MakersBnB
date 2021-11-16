@@ -1,0 +1,13 @@
+<h1>MakersBnB Spaces:</h1>
+<ul>
+  <% @spaces.each do |space| %>
+    <li>
+      <h2> <%= space.name %> </h2>
+      <p> <%= space.description %> </p>
+      <h3> <%= space.price %> </h3>
+      <form action="/book_space/<%= space.id %>" method="get">
+        <input type="submit" value="Book" />
+      </form>
+    </li>
+  <% end %>
+</ul>

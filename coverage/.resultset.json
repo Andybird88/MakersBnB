@@ -1,37 +1,33 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/andybird/projects/MakersBnB/spec/features/booking_spec.rb": {
+main
         "lines": [
           1,
           1,
           1,
-          null,
+main
           null,
           null,
           1,
           1,
+
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+main
           null,
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/creating_a_new_space_spec.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
+main
           null
         ]
       }
     },
-    "timestamp": 1637065056
+main
   }
 }
