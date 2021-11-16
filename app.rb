@@ -29,8 +29,8 @@ end
 
   post '/createaspace' do
     # erb :create_space
-    #redirect '/viewspaces'
-    redirect '/book'
+    redirect '/view_spaces'
+
   end
 
   get '/view_spaces' do

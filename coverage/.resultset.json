@@ -1,33 +1,72 @@
 {
   "RSpec": {
     "coverage": {
-main
+      "/Users/ginnythomas/Documents/Projects/MakersBnB/spec/features/booking_spec.rb": {
         "lines": [
           1,
           1,
           1,
-main
           null,
-          null,
-          1,
-          1,
-
-          1,
           null,
           null,
           1,
           1,
-          1,
-main
           null,
           null
         ]
       },
-main
+      "/Users/ginnythomas/Documents/Projects/MakersBnB/spec/features/creating_a_new_space_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ginnythomas/Documents/Projects/MakersBnB/spec/features/index_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ginnythomas/Documents/Projects/MakersBnB/spec/features/view_spaces_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-main
+    "timestamp": 1637072182
   }
 }
