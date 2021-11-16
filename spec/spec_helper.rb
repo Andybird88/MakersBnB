@@ -1,5 +1,6 @@
 require 'rspec'
 require 'capybara'
+require_relative 'create_test_database'
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'capybara/rspec'
