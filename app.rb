@@ -9,6 +9,9 @@ class Makersbnb < Sinatra::Base
     enable :sessions
   end
 
+  get ('/book') do
+    erb :booking_form
+  end
 
 
   run! if app_file == $PROGRAM_NAME
