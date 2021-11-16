@@ -9,7 +9,13 @@ class Makersbnb < Sinatra::Base
     enable :sessions
   end
 
+  get '/' do
+    erb(:index)
+  end
 
+  get '/view_spaces' do
+    erb(:view_spaces)
+  end
 
   run! if app_file == $PROGRAM_NAME
 

@@ -1,7 +1,42 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/index_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/view_spaces_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1637061173
+    "timestamp": 1637065049
   }
 }
