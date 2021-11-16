@@ -1,23 +1,13 @@
 <h1>MakersBnB Spaces:</h1>
-
-<p>
-  Beach Cove Getaway
-  Description: A cozy bungalow in Cornwall.
-  Price: £300/night
-
-<form method="get" action="/book">
-  <input type="submit" value="Book"/>
-</form>
-</p>
-<!--<ul>-->
-  <%# @spaces.each do |space| %>
-<!--    <li>-->
-<!--      <h2> <%#= space.name %> </h2>-->
-<!--      <p> <%#= space.description %> </p>-->
-<!--      <h3> <%#= space.price %> </h3>-->
-<!--      <form action="/book_space/<%#= space.id %>" method="get">-->
-<!--        <input type="submit" value="Book" />-->
-<!--      </form>-->
-<!--    </li>-->
-  <%# end %>
-<!--</ul>-->
+<ul>
+  <% @spaces.each do |space| %>
+    <li>
+      <h2> <%= space.name %> </h2>
+      <p> <%= space.description %> </p>
+      <h3> <%= space.price %> </h3>
+      <form action="/book" method="get">
+        <input type="submit" value="Book" />
+      </form>
+    </li>
+  <% end %>
+</ul>

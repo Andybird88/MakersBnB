@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/reloader' if development?
+require './lib/space'
 
 
 class Makersbnb < Sinatra::Base
@@ -34,6 +35,7 @@ end
   end
 
   get '/view_spaces' do
+    @spaces = Space.all
     erb(:view_spaces)
   end
 
