@@ -41,7 +41,7 @@ class Makersbnb < Sinatra::Base
     # description = params[:Description]
     # price = params[:Price]
 
-    @spaces = Space.create(name: params[:name], description: params[:description], price: params[:price])
+    Space.create(name: params[:name], description: params[:description], price: params[:price])
     # erb :create_space
     redirect '/view_spaces'
   end
