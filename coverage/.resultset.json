@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/andybird/projects/MakersBnB/spec/features/add_user_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/add_user_spec.rb": {
         "lines": [
           1,
           1,
@@ -18,7 +18,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/booking_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -32,7 +32,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/create_account_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/create_account_spec.rb": {
         "lines": [
           1,
           1,
@@ -47,7 +47,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/creating_a_new_space_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/creating_a_new_space_spec.rb": {
         "lines": [
           1,
           1,
@@ -59,7 +59,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/index_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -89,7 +89,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/sign_in_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/sign_in_spec.rb": {
         "lines": [
           1,
           1,
@@ -102,7 +102,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/features/view_spaces_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/features/view_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -112,7 +112,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/spaces_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/spaces_spec.rb": {
         "lines": [
           1,
           null,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/spec/user_spec.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -147,6 +147,7 @@
           1,
           1,
           1,
+          null,
           1,
           null,
           null,
@@ -155,33 +156,37 @@
           null
         ]
       },
-      "/Users/andybird/projects/MakersBnB/lib/user.rb": {
+      "/Users/dylanjames/Projects/MakersBnB/lib/user.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           0,
-          0,
-          0,
-          0,
-          null,
           null,
           1,
           1,
           1,
-          null,
-          0,
-          null,
-          1,
-          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637164758
+    "timestamp": 1637170351
   }
 }

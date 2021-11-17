@@ -19,7 +19,7 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/create_user' do
-    
+    User.create(name: params[:name], description: params[:description], email: params[:email], password: params[:password])
     redirect '/view_spaces'
   end
 

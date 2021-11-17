@@ -17,7 +17,6 @@ describe Space do
     spaces = Space.all
 
     expect(spaces.first.name).to eq 'Beach Cove Hideaway'
-        
     end
   end
 end
