@@ -18,6 +18,11 @@ class Makersbnb < Sinatra::Base
     erb(:create_account)
   end
 
+  post '/create_user' do
+    
+    redirect '/view_spaces'
+  end
+
   get '/sign_in' do
     erb(:sign_in)
   end
