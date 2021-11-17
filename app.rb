@@ -25,10 +25,16 @@ end
   end
 
   get '/createspace' do
+
     erb :create_space
   end
 
   post '/createaspace' do
+    name = params[:Name]
+    description = params[:Description]
+    price = params[:Price]
+
+    @spaces = Space.create(name, description, price)
     # erb :create_space
     redirect '/view_spaces'
 
