@@ -29,7 +29,16 @@ class Space
     end
   end
 
-  def self.create
+  def self.create(name:,description:, price:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    connection.exec("INSERT INTO spaces (s_name, description, price) VALUES ('#{name}', '#{description}', '#{price}');")
+    
+    
+
   end
 
   def self.book
