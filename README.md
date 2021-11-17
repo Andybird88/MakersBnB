@@ -73,6 +73,10 @@ I would only like my space to be unavailable after I have confirmed a booking
 
 <img width="1371" alt="Screenshot 2021-11-15 at 16 49 37" src="https://user-images.githubusercontent.com/90717175/141821476-21101dbe-5544-4028-ab66-d50edafa72de.png">
 
+# Updated Domain Model: Day 2
+
+<img width="1354" alt="Screenshot 2021-11-16 at 17 37 38" src="https://user-images.githubusercontent.com/90717175/142177674-28d13aae-ff33-4a07-a827-6c805a459514.png">
+
 ### Nice-to-haves
 
 - Users should receive an email whenever one of the following happens:
