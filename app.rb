@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/reloader' if development?
 require './lib/space'
+require './lib/user'
 
 
 class Makersbnb < Sinatra::Base
@@ -19,7 +20,7 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/create_user' do
-    User.create(name: params[:name], description: params[:description], email: params[:email], password: params[:password])
+    User.create(name: params[:name], username: params[:username], email: params[:email], password: params[:password])
     redirect '/view_spaces'
   end
 
