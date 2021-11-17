@@ -13,7 +13,6 @@ describe Space do
       connection.exec("INSERT INTO spaces (s_name, description, price) VALUES ('Beach Cove Hideaway', 'Cozy cabin in Cornwall', '200.00');")
       connection.exec("INSERT INTO spaces (s_name, description, price) VALUES ('Roman Bungalow', '2 bedroom bungalow in York', '350.00');")
       connection.exec("INSERT INTO spaces (s_name, description, price) VALUES ('City Views Apartment', 'Studio apartment in London overlooking Thames and the gerkin', '300.00');")
- main
 
     spaces = Space.all
 
