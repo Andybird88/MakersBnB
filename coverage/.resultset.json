@@ -1,19 +1,39 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/dylanjames/Projects/MakersBnB/spec/book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/dylanjames/Projects/MakersBnB/lib/book.rb": {
+        "lines": [
+
+        ]
+      },
       "/Users/dylanjames/Projects/MakersBnB/spec/features/add_user_spec.rb": {
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          1,
+          0,
           null,
           null
         ]
@@ -25,9 +45,9 @@
           null,
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -36,13 +56,13 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -51,10 +71,10 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -63,28 +83,28 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null
         ]
@@ -93,11 +113,11 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -106,8 +126,8 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null
         ]
@@ -116,30 +136,33 @@
         "lines": [
           1,
           null,
+          null,
           1,
           1,
           1,
-          1,
+          0,
           null,
           null,
           null,
           null,
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
           null,
           1,
+          1,
+          0,
+          0,
           null,
-          1,
           null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
           null,
           null,
           null
@@ -152,15 +175,15 @@
           1,
           1,
           1,
-          1,
+          0,
           null,
-          1,
+          0,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637231232
+    "timestamp": 1637232062
   }
 }

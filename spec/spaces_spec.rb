@@ -1,5 +1,6 @@
 require_relative '../lib/space'
 
+
 describe Space do
   describe '#self.all' do
     it 'displays list of spaces' do
@@ -26,4 +27,6 @@ describe Space do
       expect(space.name).to eq 'Country Cottage'
     end
   end
+
+
 end
