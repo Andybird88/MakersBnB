@@ -86,6 +86,11 @@ class Makersbnb < Sinatra::Base
     erb(:view_spaces)
   end
 
+  get '/log_out' do
+      session.clear
+      redirect '/sign_in'
+    end
+
   run! if app_file == $PROGRAM_NAME
 
 end
