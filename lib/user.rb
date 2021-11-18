@@ -28,8 +28,16 @@ class User
     else
       connection = PG.connect(dbname: 'makersbnb')
     end
-    result = connection.exec("SELECT * FROM users WHERE username = '#{username}';")
-    User.new(id: result[0]['user_id'], name: result[0]['u_name'], username: result[0]['username'], email: result[0]['email'], password: result[0]['password'])
+    begin 
+      result = connection.exec("SELECT * FROM users WHERE username = '#{username}';")
+      User.new(id: result[0]['user_id'], name: result[0]['u_name'], username: result[0]['username'], email: result[0]['email'], password: result[0]['password'])
+    rescue
+    end
+    end
+
+  def authenticate(password:)
+    self.find_by('')
+    
   end
 
 end

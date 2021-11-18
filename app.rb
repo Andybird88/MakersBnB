@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/reloader' if development?
+require 'sinatra/flash'
 require './lib/space'
 require './lib/user'
 require './lib/book'
@@ -9,6 +10,7 @@ require './lib/book'
 class Makersbnb < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
+    register Sinatra::Flash
     enable :sessions
   end
 
@@ -28,6 +30,31 @@ class Makersbnb < Sinatra::Base
   get '/sign_in' do
     erb(:sign_in)
   end
+
+  post '/sign_in' do
+    @user = User.find_by(username: params[:username])
+    if @user == nil
+      # flash.now[:message] = "Invalid Email or Password"
+      redirect '/sign_in_error'
+    else
+      session[:username] = @user.username
+    redirect '/view_spaces'
+    end
+  end
+
+  get '/sign_in_error' do
+    erb :sign_in_error
+  end
+
+#     @user = User.find_by(:username => params[:username])
+#       if @user && @user.authenticate(params[:password])
+#  session[:user_id] = @user.id
+#       redirect to “/stories”
+#       else
+#          flash.now[:message] = “Invalid Email or Password”
+#          erb :“users/login”
+#       end
+  
 
   get ('/book') do
     
