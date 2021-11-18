@@ -8,6 +8,6 @@ feature 'adding user' do
     fill_in('Password', with: 'test')
     click_button('Submit')
 
-    expect(page).to have_content('Hi!')
+    expect(page).to have_content('Hi')
   end
 end

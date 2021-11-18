@@ -37,7 +37,7 @@ class Makersbnb < Sinatra::Base
       # flash.now[:message] = "Invalid Email or Password"
       redirect '/sign_in_error'
     else
-      session[:username] = @user.username
+      session[:username] = params[:username]
     redirect '/view_spaces'
     end
   end
@@ -81,6 +81,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/view_spaces' do
+    session[:username]
     @spaces = Space.all
     erb(:view_spaces)
   end
