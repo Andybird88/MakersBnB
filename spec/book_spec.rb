@@ -4,8 +4,8 @@ require_relative '../lib/book'
 describe Book do
   describe '#.book.create' do
     it 'allows a user to book a space' do
-      booking = Book.create(start_date: '18/11/2021', end_date: '19/11/2021')
-      expect(booking.start_date).to eq '18/11/2021'
+      booking = Book.create(start_date: '2021-11-18', end_date: '2021-11-19')
+      expect(booking.start_date).to eq '2021-11-18'
     end
   end
 end
