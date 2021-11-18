@@ -22,4 +22,14 @@ class User
     User.new(id: result[0]['user_id'], name: result[0]['u_name'], username: result[0]['username'], email: result[0]['email'], password: result[0]['password'])
   end
 
+  def self.find_by(id:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    result = connection.exec("SELECT * FROM users WHERE user_id = #{id};")
+    User.new(id: result[0]['user_id'], name: result[0]['u_name'], username: result[0]['username'], email: result[0]['email'], password: result[0]['password'])
+  end
+
 end

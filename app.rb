@@ -30,6 +30,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get ('/book') do
+    
     erb :booking_form
   end
 
