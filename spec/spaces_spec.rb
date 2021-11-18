@@ -19,4 +19,11 @@ describe Space do
     expect(spaces.first.name).to eq 'Beach Cove Hideaway'
     end
   end
+
+  describe '#.self.create' do
+    it 'creates a new space' do
+      space = Space.create(name: 'Country Cottage', description: 'Lovely countryside cottage for holiday makers', price: '250.00')
+      expect(space.name).to eq 'Country Cottage'
+    end
+  end
 end
