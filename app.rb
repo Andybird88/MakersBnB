@@ -3,6 +3,7 @@ require 'sinatra/base'
 require 'sinatra/reloader' if development?
 require './lib/space'
 require './lib/user'
+require './lib/book'
 
 
 class Makersbnb < Sinatra::Base
@@ -33,6 +34,8 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/booking_request' do
+    Book.create(start_date: params[:start_date], end_date: params[:end_date])
+    @start_date = params[:start_date]
     erb :confirmation
     #redirect '/confirmation_page'
   end
@@ -43,10 +46,7 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/createaspace' do
-    # name = params[:Name]
-    # description = params[:Description]
-    # price = params[:Price]
-
+  
     Space.create(name: params[:name], description: params[:description], price: params[:price])
     # erb :create_space
     redirect '/view_spaces'
