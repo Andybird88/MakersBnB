@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CSS Template</title>
+  <title>HT Maker's BnB - Booking Confirmation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -12,8 +12,9 @@
       }
 
       body {
-          margin: 0;
+          margin: 10px;
           font-family: Georgia;
+          height:100%;
       }
 
       /* Style the top navigation bar */
@@ -29,10 +30,12 @@
           background-color: #ddd;
           color: #663399;
           border: 2px solid navy;
-          padding: 22px 20px;
+          padding: 20px 40px;
           text-align: center;
           text-decoration: none;
-
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-right: 10px;
       }
 
       /* Change color on hover */
@@ -48,15 +51,34 @@
           color: grey;
           background-color: azure;
           padding: 10px;
-          min-height: 400px; /* Should be removed. Only for demonstration */
+          min-height: 400px;  /*Should be removed. Only for demonstration */
+          height: 100%;
+      }
+      .content a:link, a:visited {
+          float: left;
+          display: block;
+          background-color: #ddd;
+          color: #663399;
+          border: 2px solid navy;
+          padding: 22px 20px;
+          text-align: center;
+          text-decoration: none;
+
       }
 
+      /* Change color on hover */
+      .content a:hover, a:active {
+          background-color: azure;
+          color: teal;
+      }
       /* Style the footer */
       .footer {
           font-size: 0.9em;
           background-color: #778899;
           padding: 10px;
           color: #FFFFFF;
+          max-height: 200px;
+          text-align: center;
       }
 
       /* Create three equal columns that floats next to each other */
@@ -66,37 +88,42 @@
           padding: 10px;
       }
 
-
       /* Clear floats after the columns */
       .row:after {
           content: "";
           display: table;
           clear: both;
       }
-
+      /* Beach image
+      .beachimg {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+      } */
   </style>
 </head>
 <body>
 
 <div class="topnav">
-  <div class="row">
-    <div class="column">
-      <p style="color:#663399;">HT Maker's BnB</p>
-    </div>
-    <div class="column">
-      <a href="default.asp" target="/sign_in">Sign In</a>
-    </div>
-  </div>
+  <a href="/log_out">Log Out</a>
+  <a href="/create_space">Create New Space</a>
+  <a href="/my_bookings">View My Bookings</a>
+  <a href="/">Home</a>
 
-  <div class="content">
-    <h2>CSS Template</h2>
-    <p>A topnav, content and a footer.</p>
-  </div>
 
-  <div class="footer">
-    Copyright 2021 Team Hunter Thunderous, Makers Academy. All Rights Reserved. No Software Developers were harmed in the making of this website.
-  </div>
+</div>
+
+
+<div class="content">
+  <h1>Thank you, your booking request for <%=@venue_name%> on <%=@start_date%> has been sent for approval</h1>
+        <p><form action="/view_spaces" method="get"></style>
+          <input type="submit" value="View Spaces">
+        </form></p>
+</div>
+
+<div class="footer">
+  Copyright 2021 Team Hunter Thunderous, Makers Academy. All Rights Reserved. No Software Developers were harmed in the making of this website.
+</div>
 
 </body>
 </html>
-

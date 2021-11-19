@@ -47,7 +47,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/account' do
-    erb :account
+    erb :waiting_create_account
   end
 
 #     @user = User.find_by(:username => params[:username])
@@ -94,19 +94,6 @@ class Makersbnb < Sinatra::Base
       session.clear
       redirect '/sign_in'
     end
-
-  get '/home_page' do
-    erb :home_page
-  end
-
-  get '/view_page' do
-    session[:username]
-    @spaces = Space.all
-    erb :view_page
-  end
-  get '/login_error' do
-    erb :login_error
-  end
 
   run! if app_file == $PROGRAM_NAME
 
