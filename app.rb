@@ -105,8 +105,13 @@ class Makersbnb < Sinatra::Base
     @spaces = Space.all
     erb :view_page
   end
+
   get '/login_error' do
     erb :login_error
+  end
+
+  get '/new_space' do
+    erb :new_space
   end
 
   run! if app_file == $PROGRAM_NAME
