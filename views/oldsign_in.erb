@@ -1,0 +1,10 @@
+<h1>Sign In to your Makers BnB account:</h1>
+<form action="/sign_in" method="post">
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Submit" />
+</form>
+
+<%if flash[:message]%>
+<h3><%= flash[:message] %></h3>
+<% end %>

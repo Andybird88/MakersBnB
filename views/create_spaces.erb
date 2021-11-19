@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HT Maker's BnB - Sign In</title>
+  <title>HT Maker's BnB - View Spaces</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -48,8 +48,8 @@
       /* Style the content */
       .content {
           font-size: 1em;
-          color: grey;
-          background-color: #D8BFD8;
+          color: azure;
+          background-color: azure;
           padding: 10px;
           min-height: 400px;  /*Should be removed. Only for demonstration */
          height: 100%;
@@ -98,11 +98,11 @@
           display: block;
           align: center;
           text-align: center;
-          width: 400px;
-          height: 600px;
+          width: 600px;
+          height: 800px;
           padding: 5px;
           border: 1px #ddd;
-          background-color: #DDA0DD;
+          background-color: #5F9EA0;
       }
 
   </style>
@@ -110,24 +110,25 @@
 <body>
 
   <div class="topnav">
-    <a href="/create_account">Create an Account</a>
+    <a href="/log_out">Log Out</a>
+    <a href="/view_spacs">View Spaces</a>
+    <a href="/my_bookings">View My Bookings</a>
+    <a href="/">Home</a>
   </div>
 
 
   <div class="content" align="center">
     <span class="c">
     <br>
-    <br>
-      <h1>Sign In to your <br>
-        HT Maker's BnB account:</h1>
-    <br>
-    <br>
-    <form action="/sign_in" method="post" align="center">
-      <input type="text" name="username" placeholder="Username"><br><br>
-      <input type="password" name="password" placeholder="Password"><br><br>
-      <input type="submit" value="Submit" />
-    </form></span>
+    <br> <h1> To list a space please enter the details below</h1><br>
 
+<form method="post", action="/createaspace">
+Property Name: <br><input type="text", name="name"/><br>
+Description: <br> <textarea rows="10" cols='30' type="text", name="description"></textarea><br>
+Price per Night: <br>£ <input type="text", name="price"/><br><br>
+<input type="submit", value="Submit"/>
+<input style='visibility: hidden;', type="text", name="user_id", value="<%=@username%>"><br>
+</form></span>
   </div>
 
   <div class="footer">
