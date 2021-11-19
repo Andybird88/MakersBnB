@@ -15,11 +15,11 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/' do
-      erb(:old_index)
+      erb(:index)
   end
 
   get '/create_account' do
-    erb(:oldcreate_account)
+    erb(:create_account)
   end
 
   post '/create_user' do
@@ -30,7 +30,6 @@ class Makersbnb < Sinatra::Base
   get '/sign_in' do
     session.clear
     erb(:sign_in)
-
   end
 
   post '/sign_in' do
@@ -45,7 +44,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/sign_in_error' do
-    erb :oldsign_in_error
+    erb :sign_in_error
   end
 
   get '/account' do
@@ -63,8 +62,8 @@ class Makersbnb < Sinatra::Base
 
 
   get ('/book') do
-    
     erb :booking_form
+  end
 
   get ('/book/:id/:space_name') do
     @username = session[:username]
@@ -79,18 +78,13 @@ class Makersbnb < Sinatra::Base
     @start_date = params[:start_date]
     @venue_name = params["venue_name"]
     erb :confirmation
-
     #redirect '/confirmation_page'
   end
 
   get '/createspace' do
-
-
     erb :create_space
-
     @username = User.find_by(username: session[:username]).id
     erb :create_space
-
   end
 
   post '/createaspace' do
@@ -107,9 +101,9 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/log_out' do
-      session.clear
-      redirect '/sign_in'
-    end
+    session.clear
+    redirect '/sign_in'
+  end
 
   get '/home_page' do
     erb :home_page
