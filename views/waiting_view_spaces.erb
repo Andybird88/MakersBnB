@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HT Maker's BnB - View Spaces</title>
+  <title>HT Maker's BnB - Create a new space</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -48,7 +48,7 @@
       /* Style the content */
       .content {
           font-size: 1em;
-          color: grey;
+          color: azure;
           background-color: azure;
           padding: 10px;
           min-height: 400px;  /*Should be removed. Only for demonstration */
@@ -94,12 +94,17 @@
           display: table;
           clear: both;
       }
-      /* Beach image
-      .beachimg {
-          background-color: #aaa;
-          width: 100%;
-          padding: 20px;
-      } */
+      span.c {
+          display: block;
+          align: center;
+          text-align: center;
+          width: 600px;
+          height: 800px;
+          padding: 5px;
+          border: 1px #ddd;
+          background-color: #5F9EA0;
+      }
+
   </style>
 </head>
 <body>
@@ -113,20 +118,20 @@
   </div>
 
 
-  <div class="content">
-    <h1>HT MakersBnB Spaces:</h1>
-    <p>Hi <%=session[:username]%>!</p>
-    <ul>
-      <% @spaces.each do |space| %>
-        <li>
-          <h2> <%= space.name %> </h2>
-          <p> <%= space.description %> </p>
-          <h3> £ <%= space.price %> </h3>
-          <form action="/book" method="get"></style>
-            <input type="submit" value="Book">
-          </form><br>
+  <div class="content" align="center">
+    <span class="c">
+      <br>
+    <h1> To list a space please enter the details below</h1>
+
+    <form method="post", action="/createaspace">
+      Name: <br><input type="text", name="name"/><br>
+      Description: <br> <textarea rows="15" type="text", name="description"></textarea><br>
+      Price per Night: <br><input type="text", name="price"/><br><br>
+      <input type="submit", value="Submit"/><br>
+      <input style='visibility: hidden;', type="text", name="user_id", value=<%=@username%>><br>
+    </form></span>
         </li>
-      <% end %>
+
     </ul>
   </div>
 
