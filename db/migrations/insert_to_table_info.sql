@@ -1,12 +1,25 @@
-Insert into Users table
+INSERT INTO users (email, password, u_name, username) VALUES ('test1@test.com', 'test', 'Luke C', 'Luke-the-duke');
+INSERT INTO users (email, password, u_name, username) VALUES ('test2@test.com', 'test', 'Ginny T', 'ginnyamazed');
+INSERT INTO users (email, password, u_name, username) VALUES ('test3@test.com', 'test', 'Dylan J', 'DylanRJ');
+INSERT INTO users (email, password, u_name, username) VALUES ('test4@test.com', 'test', 'Andy B', 'Bird88');
+INSERT INTO users (email, password, u_name, username) VALUES ('test5@test.com', 'test', 'Grace T', 'doglover5232');
+INSERT INTO users (email, password, u_name, username) VALUES ('dog@test.com', 'test', 'Aurora The Dog', 'Muppy');
+INSERT INTO users (email, password, u_name, username) VALUES ('jondoe@email.com', 'test', 'Jon Doe', 'JonDoeRayMe');
+INSERT INTO users (email, password, u_name, username) VALUES ('test6@test.com', 'test', 'Rocky W', 'AussieRock');
+INSERT INTO users (email, password, u_name, username) VALUES ('test7@test.com', 'test', 'Cooper M', 'Wild_one');
+INSERT INTO users (email, password, u_name, username) VALUES ('test8@test.com', 'test', 'Barney Stinson', 'Legendary');
 
-INSERT INTO users (email, password, u_name, username) VALUES ('test1@test.com', 'test', 'LukeC', 'Luke-the-duke');
-INSERT INTO users (email, password, u_name, username) VALUES ('test2@test.com', 'test', 'GinnyT', 'ginnyamazed');
-INSERT INTO users (email, password, u_name, username) VALUES ('test3@test.com', 'test', 'DylanJ', 'DylanRJ');
-INSERT INTO users (email, password, u_name, username) VALUES ('test4@test.com', 'test', 'AndyB', 'AndyB');
 
-Insert into Spaces table
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Beach Cove Hideaway', 'Cozy cabin in Cornwall.  2 Bed, 1 Bath.  Spacious kitchen with great ocean views.  Bathroom has shower and large tub.  Sleeps up to 4 people.  5 minute walk to white, sandy beach.', '200.00', '1' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Roman Bungalow', '2 bedroom bungalow in York.  Experience old Roman wonders while walking through city centre.', '350.00', '3' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('City Views Apartment', 'Studio apartment in London overlooking Thames and the Shakespeare Globe.  Just a short walk from Tower Bridge and the financial district.  The apartment has a double bed and a small 2 person couch.  Max guests, 2.', '300.00', '4' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Nowhere McMansion', 'Enjoy quiet for the whole family in this large 5 bedroom, 5 bath house between Cambridge and Huntingdon in East of England.  Parking for 2-4 cars.  No neighbors for miles.  A fully equipped gourmet kitchen with double ovens and a dishwasher will help you prep and clean for large family meals.  Sleeps up to 8-12 people.', '300.00', '2' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Jade Home', '3 Bed, 2 bath terraced house in city centre.  10 minute walk from the train station and 5 minute to bell tower.  1 Double and 2 twin beds.  Kitchen extras include hot water kettle and toaster. On street metered parking available.', '200.00', '1' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Surprise B&B', 'St. Ives B & B with double bed with ensuite.  Do you enjoy getting to know strangers?  You just might when you come down for continental breakfast while other guests are also booked.  House managers enjoy evening piano sing-a-longs and board games. Sorry, no pets.', '150.00', '3' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Smokers Delight, Do you like to smoke but dislike holiday because most places do not allow smoking?  We have you covered.  1 bed, 1 bath 5th floor walk up with a small balcony.  Smoking allowed.', '100.00', '5' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Pet Friendly Paradise', 'Does your family think you love the dog more than most of them?  If so, you might want to be careful booking this one.  3 Bed, 3 Bath, and 2 pet bed terraced home with a back garden and across the street from a large public garden. Take Fido outside and throw that ball!  Does Fido like to sleep on the bed or get on the furniture with you?  No worries!  Two bedrooms have a large kind bed, 3rd bedroom has a double and the sheets and couches are dark coloured so that those muddy paws do not look start against the typical white duvet covers. <br> Several walking paths nearby and multiple kid and dog friendly pubs and restaurants within a 5 minute walk.', '250.00', '6' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Cozy retreat', 'Charming and cozy apartment conveniently located in the heart of Liverpool.  2 Bed, 1 Bath.  Efficient kitchen with a window overlooking a peek at the nearby park.', '100.00', '8' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Cozy but honest retreat', 'Charming (too old) and cozy (too small) apartment conveniently located in the heart of Manchester.  2 Bed, 1 Bath.  Efficient kitchen (do not expect to fit 2 people in there at the same time) with a window overlooking a peek (if you get the angle just right) at the nearby park.', '100.00', '10' );
+INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Misleading Madness', 'Do you get frustrated when you try to book somewhere online and it turns out that the pictures were not truly representative of what you would get.  One time I booked a place in Rome that was supposed to be a hotel or something, but was in an apartment building in a scary at night neighborhood and absolutely no indication I was in the right place.  You know what I did once I got there?  I turned around, cancelled my booking through my phone and decided I would rather spend more for an actual hotel that I found walking down the street than take my chances there.', '0.00', '9' );
 
-INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Beach Cove Hideaway', 'Cozy cabin in Cornwall', '200.00', '1' );
-INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('Roman Bungalow', '2 bedroom bungalow in York', '350.00', '3' );
-INSERT INTO spaces (s_name, description, price, owner_id) VALUES ('City Views Apartment', 'Studio apartment in London overlooking Thames and the gerkin', '300.00', '4' );
+

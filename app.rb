@@ -91,6 +91,9 @@ class Makersbnb < Sinatra::Base
       redirect '/sign_in'
     end
 
+  get '/simple' do
+    erb :simple_background
+  end
   run! if app_file == $PROGRAM_NAME
 
 end
