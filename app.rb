@@ -70,13 +70,13 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/createspace' do
-
+    @username = User.find_by(username: session[:username]).id
     erb :create_space
   end
 
   post '/createaspace' do
-  
-    Space.create(name: params[:name], description: params[:description], price: params[:price])
+    @username = session[:username]
+    Space.create(name: params[:name], description: params[:description], price: params[:price], user_id: params[:user_id])
     # erb :create_space
     redirect '/view_spaces'
   end
