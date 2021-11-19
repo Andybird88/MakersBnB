@@ -61,14 +61,18 @@ class Makersbnb < Sinatra::Base
 #       end
   
 
-  get ('/book') do
-    
+  get ('/book/:id/:space_name') do
+    @username = session[:username]
+    @user_id = User.find_by(username: session[:username]).id
+    @space_id = params["id"]
+    @space_name = params["space_name"]
     erb :booking_form
   end
 
-  post '/booking_request' do
-    Book.create(start_date: params[:start_date], end_date: params[:end_date])
+  post '/booking_request/:venue_name' do
+    Book.create(start_date: params[:start_date], end_date: params[:end_date], user_id: params[:user_id], space_id: params[:space_id])
     @start_date = params[:start_date]
+    @venue_name = params["venue_name"]
     erb :confirmation
     #redirect '/confirmation_page'
   end
@@ -86,7 +90,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/view_spaces' do
-    session[:username]
+    @username = session[:username]
     @spaces = Space.all
     erb(:view_spaces)
   end

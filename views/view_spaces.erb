@@ -1,12 +1,12 @@
 <h1>MakersBnB Spaces:</h1>
-<p>Hi <%=session[:username]%>!</p>
+<p>Hi <%=@username%>!</p>
 <ul>
   <% @spaces.each do |space| %>
     <li>
       <h2> <%= space.name %> </h2>
       <p> <%= space.description %> </p>
       <h3> <%= space.price %> </h3>
-      <form action="/book" method="get">
+      <form action="/book/<%=space.id%>/<%=space.name%>" method="get">
         <input type="submit" value="Book" />
       </form>
     </li>

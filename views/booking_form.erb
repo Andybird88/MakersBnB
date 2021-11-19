@@ -1,12 +1,14 @@
 
-<h1>Thank you for your interest in this property</h1>
+<h1>Thank you for your interest in this property, <%=@username%></h1>
 <p>
-  <h3>Your request will be sent to the owner for approval</h3>
+  <h3>Your request to book <%=@space_name%> will be sent to the owner for approval</h3>
 </p>
-<form method="post", action="/booking_request">
+<form method="post", action="/booking_request/<%=@space_name%>">
   Name: <input type='text', name='name' /><br>
   Email: <input type='text', name='email' /><br>
   Start Date: <input type='date', name='start_date'/><br>
   End Date: <input type='date', name='end_date'/><br><br>
   <input type="submit", value="Submit Request"/>
+  <input style='visibility: hidden;', type="text", name="user_id", value="<%=@user_id%>"><br>
+  <input style='visibility: hidden;', type="text", name="space_id", value="<%=@space_id%>"><br>
 </form>
