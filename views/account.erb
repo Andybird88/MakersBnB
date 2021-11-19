@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HT Maker's BnB - Create an Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      * {
+          box-sizing: border-box;
+          font-family: Georgia;
+          font-size: 1.1em;
+      }
+
+      body {
+          margin: 10px;
+          font-family: Georgia;
+          height:100%;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+          overflow: hidden;
+          background-color: #ddd;
+      }
+
+      /* Style the topnav links */
+      .topnav a:link, a:visited {
+          float: right;
+          display: block;
+          background-color: #ddd;
+          color: #663399;
+          border: 2px solid navy;
+          padding: 20px 40px;
+          text-align: center;
+          text-decoration: none;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-right: 10px;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover, a:active {
+          background-color: azure;
+          color: teal;
+      }
+
+
+      /* Style the content */
+      .content {
+          font-size: 1em;
+          color: #E6E6FA;
+          background-color: #E6E6FA;
+          padding: 10px;
+          min-height: 400px;  /*Should be removed. Only for demonstration */
+          height: 100%;
+      }
+      .content a:link, a:visited {
+          float: left;
+          display: block;
+          background-color: #ddd;
+          color: #663399;
+          border: 2px solid navy;
+          padding: 22px 20px;
+          text-align: center;
+          text-decoration: none;
+
+      }
+
+      /* Change color on hover */
+      .content a:hover, a:active {
+          background-color: azure;
+          color: teal;
+      }
+      /* Style the footer */
+      .footer {
+          font-size: 0.9em;
+          background-color: #778899;
+          padding: 10px;
+          color: #FFFFFF;
+          max-height: 200px;
+          text-align: center;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      span.c {
+          display: block;
+          align: center;
+          text-align: center;
+          width: 400px;
+          height: 600px;
+          padding: 5px;
+          border: 1px #ddd;
+          background-color: #9400D3;
+      }
+
+  </style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="/sign_in">Sign In</a>
+</div>
+
+
+<div class="content" align="center">
+    <span class="c">
+    <br>
+    <br>
+      <br>
+     <h1>Create Account<br>
+       for HT Maker's BnB:</h1><br>
+<form action="/create_user" method="post">
+<input type="text" name="name" placeholder="Name"><br>
+  <input type="text" name="username" placeholder="Username"><br>
+  <input type="email" name="email" placeholder="Email"><br>
+  <input type="password" name="password" placeholder="Password"><br><br>
+  <input type="submit" value="Submit" />
+</form></span>
+
+</div>
+
+<div class="footer">
+  Copyright 2021 Team Hunter Thunderous, Makers Academy. All Rights Reserved. No Software Developers were harmed in the making of this website.
+</div>
+
+</body>
+</html>
