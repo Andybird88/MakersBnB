@@ -28,6 +28,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/sign_in' do
+    session.clear
     erb(:sign_in)
   end
 
