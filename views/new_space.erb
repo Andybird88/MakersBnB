@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,30 +111,22 @@
 
   <div class="topnav">
     <a href="/log_out">Log Out</a>
-    <a href="/create_space">Create New Space</a>
-    <a href="/my_bookings">View My Bookings</a>
-    <a href="/">Home</a>
-
   </div>
 
 
-  <div class="content">
+  <div class="content" align="center">
+    <span class="c">
+      <br>
+    <h1> To list a space please enter the details below</h1>
 
-<h1>MakersBnB Spaces:</h1>
-<p>Hi <%=@username%>!</p>
-<ul>
-  <% @spaces.each do |space| %>
-    <li>
-      <h2> <%= space.name %> </h2>
-      <p> <%= space.description %> </p>
-      <h3> <%= space.price %> </h3>
-      <form action="/book/<%=space.id%>/<%=space.name%>" method="get">
-        <input type="submit" value="Book" />
-      </form>
-    </li>
-  <% end %>
-</ul>
-  </div>
+    <form method="post", action="/createaspace">
+      Name: <br><input type="text", name="name"/><br>
+      Description: <br> <textarea rows="15" type="text", name="description"></textarea><br>
+      Price per Night: <br><input type="text", name="price"/><br><br>
+      <input type="submit", value="Submit"/><br>
+      <input style='visibility: hidden;', type="text", name="user_id", value=<%=@username%>><br>
+    </form></span>
+    </div>
 
   <div class="footer">
     Copyright 2021 Team Hunter Thunderous, Makers Academy. All Rights Reserved. No Software Developers were harmed in the making of this website.
@@ -143,7 +134,4 @@
 
 </body>
 </html>
-
-
-
 
