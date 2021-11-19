@@ -119,17 +119,13 @@
   <div class="content" align="center">
     <span class="c">
     <br>
-    <br> <h1>Thank you for your interest in this property <%@username%>.</h1>
-<p>
-  <h3>Your request to book <%=@space_name%> will be sent to the owner for approval</h3><br>
-      </p>
-      <form method="post", action="/booking_request">
+    <br>
 
 <h1>Thank you for your interest in this property, <%=@username%></h1>
 <p>
   <h3>Your request to book <%=@space_name%> will be sent to the owner for approval</h3>
 </p>
-<form method="post", action="/booking_request/<%=@space_name%>">
+<form method="post", action="/booking_request/<%=@space_name%>" align="center">
 
   Name: <input type='text', name='name' /><br>
   Email: <input type='text', name='email' /><br>

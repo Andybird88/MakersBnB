@@ -51,16 +51,6 @@ class Makersbnb < Sinatra::Base
     erb :create_account
   end
 
-#     @user = User.find_by(:username => params[:username])
-#       if @user && @user.authenticate(params[:password])
-#  session[:user_id] = @user.id
-#       redirect to “/stories”
-#       else
-#          flash.now[:message] = “Invalid Email or Password”
-#          erb :“users/login”
-#       end
-
-
   get ('/book') do
     erb :booking_form
   end
@@ -82,7 +72,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/createspace' do
-    erb :create_space
+
     @username = User.find_by(username: session[:username]).id
     erb :create_space
   end
