@@ -98,14 +98,14 @@ I would only like my space to be unavailable after I have confirmed a booking
 ### Set up the live database
 
 1. Connect to psql
-2. Create the database using the psql command CREATE DATABASE MakersBNB;
-3. Connect to the database using the pqsl command \c MakersBNB;
+2. Create the database using the psql command CREATE DATABASE makersbnb;
+3. Connect to the database using the pqsl command \c makersbnb;
 4. Run the query we have save in the db/migrations directory - files 01-04 to setup users_table, spaces_table, availabilities_table, and bookings_table
 ### Set up the test database
 
 1. Connect to psql
-2. Create the database using the psql command CREATE DATABASE MakersBNB_test;
-3. Connect to the database using the pqsl command \c MakersBNB_test;
+2. Create the database using the psql command CREATE DATABASE makersbnb_test;
+3. Connect to the database using the pqsl command \c makersbnb_test;
 4. Run the query we have save in the db/migrations directory - files 01-04 to setup users_table, spaces_table, availabilities_table, and bookings_table
 
 # Relational Drawing
